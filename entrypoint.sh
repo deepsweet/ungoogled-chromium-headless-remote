@@ -4,7 +4,7 @@ if [ "$(ls -A /home/chromium/.fonts/)" ]; then
   fc-cache -f -v
 fi
 
-dumb-init -- /usr/bin/chromium \
+/usr/bin/chromium \
   --disable-background-networking \
   --disable-background-timer-throttling \
   --disable-default-apps \
