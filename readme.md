@@ -1,15 +1,15 @@
-[![version](https://img.shields.io/badge/chromium-67-green.svg?style=flat-square)](https://ungoogled-software.github.io/ungoogled-chromium-binaries/releases/ubuntu/bionic_amd64/) [![build](https://img.shields.io/docker/build/deepsweet/ungoogled-chromium-headless-remote.svg?label=build&style=flat-square)](https://hub.docker.com/r/deepsweet/ungoogled-chromium-headless-remote/) [![size](https://img.shields.io/microbadger/image-size/deepsweet/ungoogled-chromium-headless-remote.svg?label=size&style=flat-square)](https://microbadger.com/images/deepsweet/ungoogled-chromium-headless-remote)
+[![version](https://img.shields.io/badge/chromium-69-green.svg?style=flat-square)](https://ungoogled-software.github.io/ungoogled-chromium-binaries/releases/debian/stretch_amd64/) [![build](https://img.shields.io/docker/build/deepsweet/ungoogled-chromium-headless-remote.svg?label=build&style=flat-square)](https://hub.docker.com/r/deepsweet/ungoogled-chromium-headless-remote/) [![size](https://img.shields.io/microbadger/image-size/deepsweet/ungoogled-chromium-headless-remote.svg?label=size&style=flat-square)](https://microbadger.com/images/deepsweet/ungoogled-chromium-headless-remote)
 
 Dockerized [Ungoogled Chromium](https://github.com/Eloston/ungoogled-chromium) in [headless](https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md) [remote debugging mode](https://chromedevtools.github.io/devtools-protocol/).
 
 ## Usage
 
 ```sh
-docker pull deepsweet/ungoogled-chromium-headless-remote:67
-docker run -it --rm -p 9222:9222 deepsweet/ungoogled-chromium-headless-remote:67
+docker pull deepsweet/ungoogled-chromium-headless-remote:69
+docker run -it --rm -p 9222:9222 deepsweet/ungoogled-chromium-headless-remote:69
 ```
 
-Example using [Puppeteer](https://github.com/GoogleChrome/puppeteer) (note that Chromium 67 works only with `puppeteer@~1.4.0`):
+Example using [Puppeteer](https://github.com/GoogleChrome/puppeteer):
 
 ```js
 import puppeteer from 'puppeteer'
