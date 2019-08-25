@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM debian:buster
 
 # https://ungoogled-software.github.io/ungoogled-chromium-binaries/releases/debian/stretch_amd64/
 ARG VERSION=72.0.3626.122-3
