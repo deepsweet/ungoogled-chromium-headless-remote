@@ -7,13 +7,15 @@ fi
 /usr/bin/chromium \
   --disable-background-networking \
   --disable-background-timer-throttling \
+  --disable-breakpad \
+  --disable-client-side-phishing-detection \
   --disable-default-apps \
   --disable-dev-shm-usage \
-  --disable-gpu \
   --disable-extensions \
-  --disable-search-engine-collection \
   --disable-sync \
   --disable-translate \
+  --disable-popup-blocking \
+  --disable-prompt-on-repost \
   --headless \
   --hide-scrollbars \
   --ignore-certificate-errors \
@@ -26,5 +28,5 @@ fi
   --remote-debugging-address=0.0.0.0 \
   --remote-debugging-port=9222 \
   --safebrowsing-disable-auto-update \
-  --set-ipv6-probe-false \
+  --disable-gpu \
   --user-data-dir=/home/chromium/
