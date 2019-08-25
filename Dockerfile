@@ -1,9 +1,9 @@
 FROM debian:buster
 
-# https://ungoogled-software.github.io/ungoogled-chromium-binaries/releases/debian/stretch_amd64/
-ARG VERSION=72.0.3626.122-3
-ARG COMMON_DEB_URL=https://github.com/Eloston/ungoogled-chromium-binaries/releases/download/${VERSION}.stretch1/ungoogled-chromium-common_${VERSION}.stretch1_amd64.deb
-ARG BROWSER_DEB_URL=https://github.com/Eloston/ungoogled-chromium-binaries/releases/download/${VERSION}.stretch1/ungoogled-chromium_${VERSION}.stretch1_amd64.deb
+# https://ungoogled-software.github.io/ungoogled-chromium-binaries/releases/debian/buster_amd64/
+ARG VERSION=76.0.3809.100-1
+ARG COMMON_DEB_URL=https://github.com/Eloston/ungoogled-chromium-binaries/releases/download/${VERSION}.buster1/ungoogled-chromium-common_${VERSION}.buster1_amd64.deb
+ARG BROWSER_DEB_URL=https://github.com/Eloston/ungoogled-chromium-binaries/releases/download/${VERSION}.buster1/ungoogled-chromium_${VERSION}.buster1_amd64.deb
 
 RUN apt-get update && \
     apt-get install --no-install-recommends --yes ca-certificates lsb-release wget fontconfig dumb-init && \
